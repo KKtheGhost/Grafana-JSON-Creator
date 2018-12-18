@@ -1,0 +1,248 @@
+{
+  "aliasColors": {
+    "46x002.xd.cn _network_in": "#9ac48a",
+    "46x002.xd.cn _network_out": "#1f78c1",
+    "IW_SLB_出流量": "#1f78c1",
+    "Mem_Cache": "#508642",
+    "Mem_Total": "#2f575e",
+    "acs_slb_dashboard.mean": "#5195ce",
+    "js_gateway01_出流量": "#5195ce",
+    "仙侠道1_国内_SLB01_入流量": "#508642",
+    "仙侠道1_国内_SLB01_出流量": "#5195ce",
+    "仙侠道1_国内_SLB02_入流量": "#7eb26d",
+    "仙侠道1_国内_SLB02_出流量": "#1f78c1"
+  },
+  "bars": false,
+  "dashLength": 10,
+  "dashes": false,
+  "datasource": "telegraf_xxd",
+  "fill": 1,
+  "gridPos": {
+    "h": 9,
+    "w": 8,
+    "x": Xlocate,
+    "y": Ylocate
+  },
+  "id": PanelID,
+  "legend": {
+    "alignAsTable": true,
+    "avg": false,
+    "current": true,
+    "max": true,
+    "min": false,
+    "rightSide": false,
+    "show": true,
+    "sideWidth": 253,
+    "sortDesc": false,
+    "total": false,
+    "values": true
+  },
+  "lines": true,
+  "linewidth": 1,
+  "links": [],
+  "nullPointMode": "connected",
+  "percentage": false,
+  "pointradius": 5,
+  "points": false,
+  "renderer": "flot",
+  "seriesOverrides": [],
+  "spaceLength": 10,
+  "stack": false,
+  "steppedLine": true,
+  "targets": [
+    {
+      "groupBy": [],
+      "measurement": "mem",
+      "orderByTime": "ASC",
+      "policy": "default",
+      "refId": "A",
+      "resultFormat": "time_series",
+      "select": [
+        [
+          {
+            "params": [
+              "cached"
+            ],
+            "type": "field"
+          }
+        ]
+      ],
+      "tags": [
+        {
+          "key": "host",
+          "operator": "=",
+          "value": "SvrNm"
+        }
+      ]
+    },
+    {
+      "groupBy": [],
+      "measurement": "mem",
+      "orderByTime": "ASC",
+      "policy": "default",
+      "refId": "B",
+      "resultFormat": "time_series",
+      "select": [
+        [
+          {
+            "params": [
+              "available"
+            ],
+            "type": "field"
+          }
+        ]
+      ],
+      "tags": [
+        {
+          "key": "host",
+          "operator": "=",
+          "value": "SvrNm"
+        }
+      ]
+    },
+    {
+      "groupBy": [],
+      "measurement": "mem",
+      "orderByTime": "ASC",
+      "policy": "default",
+      "refId": "C",
+      "resultFormat": "time_series",
+      "select": [
+        [
+          {
+            "params": [
+              "buffered"
+            ],
+            "type": "field"
+          }
+        ]
+      ],
+      "tags": [
+        {
+          "key": "host",
+          "operator": "=",
+          "value": "SvrNm"
+        }
+      ]
+    },
+    {
+      "groupBy": [],
+      "measurement": "mem",
+      "orderByTime": "ASC",
+      "policy": "default",
+      "refId": "D",
+      "resultFormat": "time_series",
+      "select": [
+        [
+          {
+            "params": [
+              "free"
+            ],
+            "type": "field"
+          }
+        ]
+      ],
+      "tags": [
+        {
+          "key": "host",
+          "operator": "=",
+          "value": "SvrNm"
+        }
+      ]
+    },
+    {
+      "groupBy": [],
+      "measurement": "mem",
+      "orderByTime": "ASC",
+      "policy": "default",
+      "refId": "E",
+      "resultFormat": "time_series",
+      "select": [
+        [
+          {
+            "params": [
+              "swap_free"
+            ],
+            "type": "field"
+          }
+        ]
+      ],
+      "tags": [
+        {
+          "key": "host",
+          "operator": "=",
+          "value": "SvrNm"
+        }
+      ]
+    },
+    {
+      "groupBy": [],
+      "measurement": "mem",
+      "orderByTime": "ASC",
+      "policy": "default",
+      "refId": "F",
+      "resultFormat": "time_series",
+      "select": [
+        [
+          {
+            "params": [
+              "swap_total"
+            ],
+            "type": "field"
+          }
+        ]
+      ],
+      "tags": [
+        {
+          "key": "host",
+          "operator": "=",
+          "value": "SvrNm"
+        }
+      ]
+    }
+  ],
+  "thresholds": [],
+  "timeFrom": null,
+  "timeShift": null,
+  "title": "SvrNm Memery",
+  "tooltip": {
+    "shared": true,
+    "sort": 0,
+    "value_type": "individual"
+  },
+  "type": "graph",
+  "xaxis": {
+    "buckets": null,
+    "mode": "time",
+    "name": null,
+    "show": true,
+    "values": []
+  },
+  "yaxes": [
+    {
+      "format": "bytes",
+      "label": null,
+      "logBase": 1,
+      "max": null,
+      "min": null,
+      "show": true
+    },
+    {
+      "format": "percent",
+      "label": null,
+      "logBase": 1,
+      "max": null,
+      "min": null,
+      "show": false
+    }
+  ],
+  "yaxis": {
+    "align": false,
+    "alignLevel": null
+  }
+},
+
+
+
+
+

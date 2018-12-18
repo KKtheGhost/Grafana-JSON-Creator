@@ -1,0 +1,186 @@
+{
+  "aliasColors": {
+    "46x002.xd.cn _network_in": "#9ac48a",
+    "46x002.xd.cn _network_out": "#1f78c1",
+    "IW_SLB_出流量": "#1f78c1",
+    "Network_in": "#7eb26d",
+    "Network_out": "#6ed0e0",
+    "acs_slb_dashboard.mean": "#5195ce",
+    "js_gateway01_出流量": "#5195ce",
+    "net.bytes_send": "#1f78c1",
+    "仙境传说_国内_SLB01_入流量": "#508642",
+    "仙境传说_国内_SLB01_出流量": "#5195ce",
+    "仙境传说_国内_SLB02_入流量": "#7eb26d",
+    "仙境传说_国内_SLB02_出流量": "#1f78c1"
+  },
+  "bars": false,
+  "dashLength": 10,
+  "dashes": false,
+  "datasource": "telegraf_ro",
+  "fill": 1,
+  "gridPos": {
+    "h": 9,
+    "w": 8,
+    "x": Xlocate,
+    "y": Ylocate
+  },
+  "id": PanelID,
+  "legend": {
+    "alignAsTable": true,
+    "avg": false,
+    "current": true,
+    "max": true,
+    "min": true,
+    "rightSide": false,
+    "show": true,
+    "sideWidth": 100,
+    "sortDesc": false,
+    "total": false,
+    "values": true
+  },
+  "lines": true,
+  "linewidth": 1,
+  "links": [],
+  "nullPointMode": "connected",
+  "percentage": false,
+  "pointradius": 5,
+  "points": false,
+  "renderer": "flot",
+  "seriesOverrides": [],
+  "spaceLength": 10,
+  "stack": false,
+  "steppedLine": true,
+  "targets": [
+    {
+      "alias": "net.bytes_recv",
+      "groupBy": [],
+      "measurement": "net",
+      "orderByTime": "ASC",
+      "policy": "default",
+      "refId": "A",
+      "resultFormat": "time_series",
+      "select": [
+        [
+          {
+            "params": [
+              "bytes_recv"
+            ],
+            "type": "field"
+          },
+          {
+            "params": [],
+            "type": "difference"
+          },
+          {
+            "params": [
+              " / 30"
+            ],
+            "type": "math"
+          }
+        ]
+      ],
+      "tags": [
+        {
+          "key": "host",
+          "operator": "=",
+          "value": "SvrNm"
+        },
+        {
+          "condition": "AND",
+          "key": "interface",
+          "operator": "=",
+          "value": "bond0"
+        }
+      ]
+    },
+    {
+      "alias": "net.bytes_send",
+      "groupBy": [],
+      "measurement": "net",
+      "orderByTime": "ASC",
+      "policy": "default",
+      "refId": "B",
+      "resultFormat": "time_series",
+      "select": [
+        [
+          {
+            "params": [
+              "bytes_sent"
+            ],
+            "type": "field"
+          },
+          {
+            "params": [],
+            "type": "difference"
+          },
+          {
+            "params": [
+              " / 30"
+            ],
+            "type": "math"
+          }
+        ]
+      ],
+      "tags": [
+        {
+          "key": "host",
+          "operator": "=",
+          "value": "SvrNm"
+        },
+        {
+          "condition": "AND",
+          "key": "interface",
+          "operator": "=",
+          "value": "bond0"
+        }
+      ]
+    }
+  ],
+  "thresholds": [],
+  "timeFrom": null,
+  "timeShift": null,
+  "title": "SvrNm Bond0 Network",
+  "tooltip": {
+    "shared": true,
+    "sort": 0,
+    "value_type": "individual"
+  },
+  "type": "graph",
+  "xaxis": {
+    "buckets": null,
+    "mode": "time",
+    "name": null,
+    "show": true,
+    "values": []
+  },
+  "yaxes": [
+    {
+      "format": "decbytes",
+      "label": "bytes per second",
+      "logBase": 1,
+      "max": null,
+      "min": null,
+      "show": true
+    },
+    {
+      "format": "short",
+      "label": null,
+      "logBase": 1,
+      "max": null,
+      "min": null,
+      "show": false
+    }
+  ],
+  "yaxis": {
+    "align": false,
+    "alignLevel": null
+  }
+},
+
+
+
+
+
+
+
+

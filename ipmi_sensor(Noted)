@@ -1,0 +1,109 @@
+> ipmi_sensor,host=42x003.xd.cn,name=uid,server=172.16.13.29 status=1i,value=0 1537416626000000000						#服务器总状态
+-------------------------
+> ipmi_sensor,host=42x003.xd.cn,name=sys_health_led,server=172.16.13.29 status=1i,value=0 1537416626000000000					#系统健康指示灯
+-------------------------
+> ipmi_sensor,host=42x003.xd.cn,name=01-inlet_ambient,server=172.16.13.29,unit=degrees_c status=1i,value=19 1537416626000000000			#入口环境温度		
+-------------------------
+> ipmi_sensor,host=42x003.xd.cn,name=02-cpu_1,server=172.16.13.29,unit=degrees_c status=1i,value=40 1537416626000000000				#CPU1温度
+> ipmi_sensor,host=42x003.xd.cn,name=03-cpu_2,server=172.16.13.29,unit=degrees_c status=1i,value=40 1537416626000000000				#CPU2温度
+-------------------------
+> ipmi_sensor,host=42x003.xd.cn,name=04-p1_dimm_1-6,server=172.16.13.29,unit=degrees_c status=1i,value=38 1537416626000000000			#内存插槽1-6检测温度-P1侧
+> ipmi_sensor,host=42x003.xd.cn,name=05-p1_dimm_7-12,server=172.16.13.29,unit=degrees_c status=1i,value=40 1537416626000000000			#内存插槽7-12检测温度-P1侧
+> ipmi_sensor,host=42x003.xd.cn,name=06-p2_dimm_1-6,server=172.16.13.29,unit=degrees_c status=1i,value=38 1537416626000000000			#内存插槽1-6检测温度-P2侧
+> ipmi_sensor,host=42x003.xd.cn,name=07-p2_dimm_7-12,server=172.16.13.29,unit=degrees_c status=1i,value=40 1537416626000000000			#内存插槽7-12检测温度-P2侧
+> ipmi_sensor,host=42x003.xd.cn,name=08-hd_max,server=172.16.13.29,unit=degrees_c status=1i,value=35 1537416626000000000			#HD-max温度
+---------------------------
+> ipmi_sensor,host=42x003.xd.cn,name=09-exp_bay_drive,server=172.16.13.29 status=0i,value=0 1537416626000000000					#EXP-bay-drive有无检测
+---------------------------
+> ipmi_sensor,host=42x003.xd.cn,name=10-chipset,server=172.16.13.29,unit=degrees_c status=1i,value=49 1537416626000000000			#chipset设备温度
+> ipmi_sensor,host=42x003.xd.cn,name=11-ps_1_inlet,server=172.16.13.29,unit=degrees_c status=1i,value=33 1537416626000000000			#入口1设备温度
+> ipmi_sensor,host=42x003.xd.cn,name=12-ps_2_inlet,server=172.16.13.29,unit=degrees_c status=1i,value=37 1537416626000000000			#入口2设备温度
+> ipmi_sensor,host=42x003.xd.cn,name=13-vr_p1,server=172.16.13.29,unit=degrees_c status=1i,value=43 1537416626000000000				#VR P1温度
+> ipmi_sensor,host=42x003.xd.cn,name=14-vr_p2,server=172.16.13.29,unit=degrees_c status=1i,value=42 1537416626000000000				#VR P2温度
+> ipmi_sensor,host=42x003.xd.cn,name=15-vr_p1_mem,server=172.16.13.29,unit=degrees_c status=1i,value=35 1537416626000000000			#VR内存P1温度
+> ipmi_sensor,host=42x003.xd.cn,name=16-vr_p1_mem,server=172.16.13.29,unit=degrees_c status=1i,value=35 1537416626000000000			#VR内存P1温度
+> ipmi_sensor,host=42x003.xd.cn,name=17-vr_p2_mem,server=172.16.13.29,unit=degrees_c status=1i,value=35 1537416626000000000			#VR内存P2温度
+> ipmi_sensor,host=42x003.xd.cn,name=18-vr_p2_mem,server=172.16.13.29,unit=degrees_c status=1i,value=35 1537416626000000000			#VR内存P2温度
+> ipmi_sensor,host=42x003.xd.cn,name=19-ps_1_internal,server=172.16.13.29,unit=degrees_c status=1i,value=46 1537416626000000000			#内部1温度
+> ipmi_sensor,host=42x003.xd.cn,name=20-ps_2_internal,server=172.16.13.29,unit=degrees_c status=1i,value=49 1537416626000000000			#内部2温度
+--------------------------
+> ipmi_sensor,host=42x003.xd.cn,name=21-pci_1,server=172.16.13.29 status=0i,value=0 1537416626000000000						#接口PCI-E slot1有无安装阵列卡，若有则检测温度
+> ipmi_sensor,host=42x003.xd.cn,name=22-pci_2,server=172.16.13.29 status=0i,value=0 1537416626000000000						#接口PCI-E slot2有无安装阵列卡，若有则检测温度
+> ipmi_sensor,host=42x003.xd.cn,name=23-pci_3,server=172.16.13.29,unit=degrees_c status=1i,value=85 1537416626000000000				#接口PCI-E slot3有无安装阵列卡，若有则检测温度
+> ipmi_sensor,host=42x003.xd.cn,name=24-pci_4,server=172.16.13.29 status=0i,value=0 1537416626000000000						#接口PCI-E slot4有无安装阵列卡，若有则检测温度
+> ipmi_sensor,host=42x003.xd.cn,name=25-pci_5,server=172.16.13.29 status=0i,value=0 1537416626000000000						#接口PCI-E slot5有无安装阵列卡，若有则检测温度
+> ipmi_sensor,host=42x003.xd.cn,name=26-pci_6,server=172.16.13.29 status=0i,value=0 1537416626000000000					·	#接口PCI-E slot6有无安装阵列卡，若有则检测温度
+-------------------------
+> ipmi_sensor,host=42x003.xd.cn,name=27-hd_controller,server=172.16.13.29 status=0i,value=0 1537416626000000000					#HD控制器有无安装，若有则检测温度
+-------------------------			
+> ipmi_sensor,host=42x003.xd.cn,name=28-lom_card,server=172.16.13.29 status=0i,value=0 1537416626000000000					#lom卡设备有无安装，若有则检测温度
+-------------------------
+> ipmi_sensor,host=42x003.xd.cn,name=29-lom,server=172.16.13.29 status=0i,value=0 1537416626000000000						#lom有无安装，若有则检测温度
+-------------------------
+> ipmi_sensor,host=42x003.xd.cn,name=30-front_ambient,server=172.16.13.29,unit=degrees_c status=1i,value=32 1537416626000000000			#前段板桥温度
+-------------------------
+> ipmi_sensor,host=42x003.xd.cn,name=31-pci_1_zone.,server=172.16.13.29,unit=degrees_c status=1i,value=37 1537416626000000000			#接口PCI1有无硬件，若有则检测区域温度
+> ipmi_sensor,host=42x003.xd.cn,name=32-pci_2_zone.,server=172.16.13.29,unit=degrees_c status=1i,value=39 1537416626000000000			#接口PCI2有无硬件，若有则检测区域温度
+> ipmi_sensor,host=42x003.xd.cn,name=33-pci_3_zone.,server=172.16.13.29,unit=degrees_c status=1i,value=39 1537416626000000000			#接口PCI3有无硬件，若有则检测区域温度
+> ipmi_sensor,host=42x003.xd.cn,name=34-pci_4_zone,server=172.16.13.29 status=0i,value=0 1537416626000000000					#接口PCI4有无硬件，若有则检测区域温度
+> ipmi_sensor,host=42x003.xd.cn,name=35-pci_5_zone,server=172.16.13.29 status=0i,value=0 1537416626000000000					#接口PCI5有无硬件，若有则检测区域温度
+> ipmi_sensor,host=42x003.xd.cn,name=36-pci_6_zone,server=172.16.13.29 status=0i,value=0 1537416626000000000					#接口PCI6有无硬件，若有则检测区域温度
+-------------------------
+> ipmi_sensor,host=42x003.xd.cn,name=37-hd_cntlr_zone,server=172.16.13.29 status=0i,value=0 1537416626000000000					#HD cntlr区域有无硬件，若有则检测温度
+-------------------------													
+> ipmi_sensor,host=42x003.xd.cn,name=38-i/o_zone,server=172.16.13.29,unit=degrees_c status=1i,value=39 1537416626000000000			#I/O接口区温度
+> ipmi_sensor,host=42x003.xd.cn,name=39-p/s_2_zone,server=172.16.13.29,unit=degrees_c status=1i,value=38 1537416626000000000			#P/S_2接口区温度
+> ipmi_sensor,host=42x003.xd.cn,name=40-battery_zone,server=172.16.13.29,unit=degrees_c status=1i,value=37 1537416626000000000			#电池区温度
+> ipmi_sensor,host=42x003.xd.cn,name=41-ilo_zone,server=172.16.13.29,unit=degrees_c status=1i,value=42 1537416626000000000			#iLO区温度
+> ipmi_sensor,host=42x003.xd.cn,name=42-rear_hd_max,server=172.16.13.29,unit=degrees_c status=1i,value=45 1537416626000000000			#rear HD max温度
+> ipmi_sensor,host=42x003.xd.cn,name=43-storage_batt,server=172.16.13.29,unit=degrees_c status=1i,value=29 1537416626000000000			#存储区电池温度
+> ipmi_sensor,host=42x003.xd.cn,name=44-fuse,server=172.16.13.29,unit=degrees_c status=1i,value=37 1537416626000000000				#用户空间文件系统温度
+--------------------------
+> ipmi_sensor,host=42x003.xd.cn,name=fan_1,server=172.16.13.29,unit=percent status=1i,value=13.72 1537416626000000000				#风扇1 转速/全功率转速(%)
+> ipmi_sensor,host=42x003.xd.cn,name=fan_1_dutycycle,server=172.16.13.29,unit=percent status=1i,value=13.72 1537416626000000000
+> ipmi_sensor,host=42x003.xd.cn,name=fan_1_presence,server=172.16.13.29 status=1i,value=0 1537416626000000000					#风扇1 运转状态
+> ipmi_sensor,host=42x003.xd.cn,name=fan_2,server=172.16.13.29,unit=percent status=1i,value=13.72 1537416626000000000				#风扇2 转速/全功率转速(%)
+> ipmi_sensor,host=42x003.xd.cn,name=fan_2_dutycycle,server=172.16.13.29,unit=percent status=1i,value=13.72 1537416626000000000
+> ipmi_sensor,host=42x003.xd.cn,name=fan_2_presence,server=172.16.13.29 status=1i,value=0 1537416626000000000					#风扇2 运转状态
+> ipmi_sensor,host=42x003.xd.cn,name=fan_3,server=172.16.13.29,unit=percent status=1i,value=13.72 1537416626000000000				#风扇3 转速/全功率转速(%)
+> ipmi_sensor,host=42x003.xd.cn,name=fan_3_dutycycle,server=172.16.13.29,unit=percent status=1i,value=13.72 1537416626000000000
+> ipmi_sensor,host=42x003.xd.cn,name=fan_3_presence,server=172.16.13.29 status=1i,value=0 1537416626000000000					#风扇3 运转状态
+> ipmi_sensor,host=42x003.xd.cn,name=fan_4,server=172.16.13.29,unit=percent status=1i,value=13.72 1537416626000000000				#风扇4 转速/全功率转速(%)
+> ipmi_sensor,host=42x003.xd.cn,name=fan_4_dutycycle,server=172.16.13.29,unit=percent status=1i,value=13.72 1537416626000000000
+> ipmi_sensor,host=42x003.xd.cn,name=fan_4_presence,server=172.16.13.29 status=1i,value=0 1537416626000000000					#风扇4 运转状态
+> ipmi_sensor,host=42x003.xd.cn,name=fan_5,server=172.16.13.29,unit=percent status=1i,value=17.25 1537416626000000000				#风扇5 转速/全功率转速(%)
+> ipmi_sensor,host=42x003.xd.cn,name=fan_5_dutycycle,server=172.16.13.29,unit=percent status=1i,value=17.25 1537416626000000000
+> ipmi_sensor,host=42x003.xd.cn,name=fan_5_presence,server=172.16.13.29 status=1i,value=0 1537416626000000000					#风扇5 运转状态
+> ipmi_sensor,host=42x003.xd.cn,name=fan_6,server=172.16.13.29,unit=percent status=1i,value=17.25 1537416626000000000				#风扇6 转速/全功率转速(%)
+> ipmi_sensor,host=42x003.xd.cn,name=fan_6_dutycycle,server=172.16.13.29,unit=percent status=1i,value=17.25 1537416626000000000
+> ipmi_sensor,host=42x003.xd.cn,name=fan_6_presence,server=172.16.13.29 status=1i,value=0 1537416626000000000					#风扇6 运转状态
+--------------------------
+> ipmi_sensor,host=42x003.xd.cn,name=power_supply_1,server=172.16.13.29,unit=watts status=1i,value=105 1537416626000000000			#供电1功率
+> ipmi_sensor,host=42x003.xd.cn,name=ps_1_output,server=172.16.13.29,unit=watts status=1i,value=105 1537416626000000000				#PS_1输出功率
+> ipmi_sensor,host=42x003.xd.cn,name=ps_1_presence,server=172.16.13.29 status=1i,value=0 1537416626000000000					#PS_1是否安装
+> ipmi_sensor,host=42x003.xd.cn,name=power_supply_2,server=172.16.13.29,unit=watts status=1i,value=85 1537416626000000000			#供电2功率
+> ipmi_sensor,host=42x003.xd.cn,name=ps_2_output,server=172.16.13.29,unit=watts status=1i,value=85 1537416626000000000				#PS_2输出功率
+> ipmi_sensor,host=42x003.xd.cn,name=ps_2_presence,server=172.16.13.29 status=1i,value=0 1537416626000000000					#PS_2是否安装
+> ipmi_sensor,host=42x003.xd.cn,name=power_meter,server=172.16.13.29,unit=watts status=1i,value=185 1537416626000000000				#电源当前功率
+> ipmi_sensor,host=42x003.xd.cn,name=pwrmeter_output,server=172.16.13.29,unit=watts status=1i,value=185 1537416626000000000			#电源输出功率
+> ipmi_sensor,host=42x003.xd.cn,name=power_supplies,server=172.16.13.29 status=1i,value=0 1537416626000000000					#是否安装电源
+----------------------------------
+> ipmi_sensor,host=42x003.xd.cn,name=fans,server=172.16.13.29 status=1i,value=0 1537416626000000000						#是否安装风扇
+> ipmi_sensor,host=42x003.xd.cn,name=megacell_status,server=172.16.13.29 status=1i,value=0 1537416626000000000					#是否安装megacell
+----------------------------------
+> ipmi_sensor,host=42x003.xd.cn,name=memory_status,server=172.16.13.29,unit=error status=1i,value=0 1537416626000000000				#是否安装内存
+----------------------------------
+> ipmi_sensor,host=42x003.xd.cn,name=c4_p1i_bay_5,server=172.16.13.29 status=1i,value=0 1537416626000000000					#硬盘位p1i5是否插入硬盘
+> ipmi_sensor,host=42x003.xd.cn,name=c4_p1i_bay_6,server=172.16.13.29 status=1i,value=0 1537416626000000000					#硬盘位p1i6是否插入硬盘
+> ipmi_sensor,host=42x003.xd.cn,name=c4_p1i_bay_7,server=172.16.13.29 status=1i,value=0 1537416626000000000					#硬盘位p1i7是否插入硬盘
+> ipmi_sensor,host=42x003.xd.cn,name=c4_p1i_bay_8,server=172.16.13.29 status=1i,value=0 1537416626000000000					#硬盘位p1i8是否插入硬盘
+> ipmi_sensor,host=42x003.xd.cn,name=c4_p1i_bay_1,server=172.16.13.29 status=1i,value=0 1537416626000000000					#硬盘位p1i1是否插入硬盘
+> ipmi_sensor,host=42x003.xd.cn,name=c4_p1i_bay_2,server=172.16.13.29 status=1i,value=0 1537416626000000000					#硬盘位p1i2是否插入硬盘
+> ipmi_sensor,host=42x003.xd.cn,name=c4_p1i_bay_3,server=172.16.13.29 status=1i,value=0 1537416626000000000					#硬盘位p1i3是否插入硬盘
+> ipmi_sensor,host=42x003.xd.cn,name=c4_p1i_bay_4,server=172.16.13.29 status=1i,value=0 1537416626000000000					#硬盘位p1i4是否插入硬盘
+> ipmi_sensor,host=42x003.xd.cn,name=c4_p2i_bay_1,server=172.16.13.29 status=1i,value=0 1537416626000000000					#硬盘位p2i1是否插入硬盘
+> ipmi_sensor,host=42x003.xd.cn,name=c4_p2i_bay_2,server=172.16.13.29 status=1i,value=0 1537416626000000000					#硬盘位p2i2是否插入硬盘
+> ipmi_sensor,host=42x003.xd.cn,name=c4_p2i_bay_1,server=172.16.13.29 status=1i,value=0 1537416626000000000					#硬盘位p2i1是否插入硬盘
+> ipmi_sensor,host=42x003.xd.cn,name=c4_p2i_bay_2,server=172.16.13.29 status=1i,value=0 1537416626000000000					#硬盘位p2i2是否插入硬盘
+> ipmi_sensor,host=42x003.xd.cn,name=c4_p2i_bay_3,server=172.16.13.29 status=1i,value=0 1537416626000000000					#硬盘位p2i3是否插入硬盘
+> ipmi_sensor,host=42x003.xd.cn,name=c4_p2i_bay_4,server=172.16.13.29 status=1i,value=0 1537416626000000000					#硬盘位p2i4是否插入硬盘

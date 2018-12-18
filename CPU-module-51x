@@ -1,0 +1,359 @@
+{
+  "aliasColors": {
+    "46x002.xd.cn _network_in": "#9ac48a",
+    "46x002.xd.cn _network_out": "#1f78c1",
+    "CPU_nice_usage": "#447ebc",
+    "CPU_system_usage": "#962d82",
+    "CPU_user_usage": "#e0f9d7",
+    "IW_SLB_出流量": "#1f78c1",
+    "acs_slb_dashboard.mean": "#5195ce",
+    "js_gateway01_出流量": "#5195ce",
+    "仙境传说_国内_SLB01_入流量": "#508642",
+    "仙境传说_国内_SLB01_出流量": "#5195ce",
+    "仙境传说_国内_SLB02_入流量": "#7eb26d",
+    "仙境传说_国内_SLB02_出流量": "#1f78c1"
+  },
+  "bars": false,
+  "dashLength": 10,
+  "dashes": false,
+  "datasource": "telegraf_ro",
+  "fill": 1,
+  "gridPos": {
+    "h": 9,
+    "w": 8,
+    "x": Xlocate,
+    "y": Ylocate
+  },
+  "hideTimeOverride": false,
+  "id": PanelID,
+  "legend": {
+    "alignAsTable": true,
+    "avg": false,
+    "current": true,
+    "max": true,
+    "min": true,
+    "rightSide": false,
+    "show": true,
+    "sideWidth": 100,
+    "sortDesc": false,
+    "total": false,
+    "values": true
+  },
+  "lines": true,
+  "linewidth": 1,
+  "links": [],
+  "nullPointMode": "connected",
+  "percentage": false,
+  "pointradius": 5,
+  "points": false,
+  "renderer": "flot",
+  "seriesOverrides": [],
+  "spaceLength": 10,
+  "stack": false,
+  "steppedLine": true,
+  "targets": [
+    {
+      "groupBy": [],
+      "measurement": "cpu",
+      "orderByTime": "ASC",
+      "policy": "default",
+      "refId": "A",
+      "resultFormat": "time_series",
+      "select": [
+        [
+          {
+            "params": [
+              "usage_guest"
+            ],
+            "type": "field"
+          }
+        ]
+      ],
+      "tags": [
+        {
+          "key": "host",
+          "operator": "=",
+          "value": "SvrNm"
+        }
+      ]
+    },
+    {
+      "groupBy": [],
+      "measurement": "cpu",
+      "orderByTime": "ASC",
+      "policy": "default",
+      "refId": "B",
+      "resultFormat": "time_series",
+      "select": [
+        [
+          {
+            "params": [
+              "usage_guest_nice"
+            ],
+            "type": "field"
+          }
+        ]
+      ],
+      "tags": [
+        {
+          "key": "host",
+          "operator": "=",
+          "value": "SvrNm"
+        }
+      ]
+    },
+    {
+      "groupBy": [],
+      "measurement": "cpu",
+      "orderByTime": "ASC",
+      "policy": "default",
+      "refId": "C",
+      "resultFormat": "time_series",
+      "select": [
+        [
+          {
+            "params": [
+              "usage_idle"
+            ],
+            "type": "field"
+          }
+        ]
+      ],
+      "tags": [
+        {
+          "key": "host",
+          "operator": "=",
+          "value": "SvrNm"
+        }
+      ]
+    },
+    {
+      "groupBy": [],
+      "measurement": "cpu",
+      "orderByTime": "ASC",
+      "policy": "default",
+      "refId": "D",
+      "resultFormat": "time_series",
+      "select": [
+        [
+          {
+            "params": [
+              "usage_iowait"
+            ],
+            "type": "field"
+          }
+        ]
+      ],
+      "tags": [
+        {
+          "key": "host",
+          "operator": "=",
+          "value": "SvrNm"
+        }
+      ]
+    },
+    {
+      "groupBy": [],
+      "measurement": "cpu",
+      "orderByTime": "ASC",
+      "policy": "default",
+      "refId": "E",
+      "resultFormat": "time_series",
+      "select": [
+        [
+          {
+            "params": [
+              "usage_irq"
+            ],
+            "type": "field"
+          }
+        ]
+      ],
+      "tags": [
+        {
+          "key": "host",
+          "operator": "=",
+          "value": "SvrNm"
+        }
+      ]
+    },
+    {
+      "groupBy": [],
+      "measurement": "cpu",
+      "orderByTime": "ASC",
+      "policy": "default",
+      "refId": "F",
+      "resultFormat": "time_series",
+      "select": [
+        [
+          {
+            "params": [
+              "usage_nice"
+            ],
+            "type": "field"
+          }
+        ]
+      ],
+      "tags": [
+        {
+          "key": "host",
+          "operator": "=",
+          "value": "SvrNm"
+        }
+      ]
+    },
+    {
+      "groupBy": [],
+      "measurement": "cpu",
+      "orderByTime": "ASC",
+      "policy": "default",
+      "refId": "G",
+      "resultFormat": "time_series",
+      "select": [
+        [
+          {
+            "params": [
+              "usage_softirq"
+            ],
+            "type": "field"
+          }
+        ]
+      ],
+      "tags": [
+        {
+          "key": "host",
+          "operator": "=",
+          "value": "SvrNm"
+        }
+      ]
+    },
+    {
+      "groupBy": [],
+      "measurement": "cpu",
+      "orderByTime": "ASC",
+      "policy": "default",
+      "refId": "H",
+      "resultFormat": "time_series",
+      "select": [
+        [
+          {
+            "params": [
+              "usage_steal"
+            ],
+            "type": "field"
+          }
+        ]
+      ],
+      "tags": [
+        {
+          "key": "host",
+          "operator": "=",
+          "value": "SvrNm"
+        }
+      ]
+    },
+    {
+      "groupBy": [],
+      "measurement": "cpu",
+      "orderByTime": "ASC",
+      "policy": "default",
+      "refId": "I",
+      "resultFormat": "time_series",
+      "select": [
+        [
+          {
+            "params": [
+              "usage_system"
+            ],
+            "type": "field"
+          }
+        ]
+      ],
+      "tags": [
+        {
+          "key": "host",
+          "operator": "=",
+          "value": "SvrNm"
+        }
+      ]
+    },
+    {
+      "groupBy": [],
+      "measurement": "cpu",
+      "orderByTime": "ASC",
+      "policy": "default",
+      "refId": "J",
+      "resultFormat": "time_series",
+      "select": [
+        [
+          {
+            "params": [
+              "usage_user"
+            ],
+            "type": "field"
+          }
+        ]
+      ],
+      "tags": [
+        {
+          "key": "host",
+          "operator": "=",
+          "value": "SvrNm"
+        }
+      ]
+    }
+  ],
+  "thresholds": [],
+  "timeFrom": null,
+  "timeShift": null,
+  "title": "SvrNm CPU",
+  "tooltip": {
+    "shared": true,
+    "sort": 0,
+    "value_type": "individual"
+  },
+  "type": "graph",
+  "xaxis": {
+    "buckets": null,
+    "mode": "time",
+    "name": null,
+    "show": true,
+    "values": []
+  },
+  "yaxes": [
+    {
+      "format": "percent",
+      "label": null,
+      "logBase": 1,
+      "max": null,
+      "min": null,
+      "show": true
+    },
+    {
+      "format": "percent",
+      "label": null,
+      "logBase": 1,
+      "max": null,
+      "min": null,
+      "show": false
+    }
+  ],
+  "yaxis": {
+    "align": false,
+    "alignLevel": null
+  }
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+

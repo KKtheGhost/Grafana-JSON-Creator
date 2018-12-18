@@ -1,0 +1,67 @@
+    {
+      "alias": "NumberNet-in",
+      "groupBy": [
+        {
+          "params": [
+            "$__interval"
+          ],
+          "type": "time"
+        },
+        {
+          "params": [
+            "null"
+          ],
+          "type": "fill"
+        }
+      ],
+      "measurement": "acs_ecs_dashboard",
+      "orderByTime": "ASC",
+      "policy": "default",
+      "refId": "A",
+      "resultFormat": "time_series",
+      "select": [
+        [
+          {
+            "params": [
+              "Average"
+            ],
+            "type": "field"
+          },
+          {
+            "params": [],
+            "type": "mean"
+          }
+        ]
+      ],
+      "tags": [
+        {
+          "key": "instanceId",
+          "operator": "=",
+          "value": "SlbName"
+        },
+        {
+          "condition": "AND",
+          "key": "metric",
+          "operator": "=",
+          "value": "VPC_PublicIP_InternetInRate"
+        },
+        {
+          "condition": "AND",
+          "key": "regionId",
+          "operator": "=",
+          "value": "cn-shanghai"
+        },
+        {
+          "condition": "AND",
+          "key": "userId",
+          "operator": "=",
+          "value": "286035910115919566"
+        }
+      ]
+    },
+
+
+
+
+
+ 
