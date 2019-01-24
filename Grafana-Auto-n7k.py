@@ -18,7 +18,7 @@ def DelCrtFile():
 
 #[Read&Write]读取预设文档并把内容写入file1
 def RdWrt():
-    ifn = "./beijing-n7k-ethernet"
+    ifn = "./beijing-n7k-ethernet"             ##此处填写利用的模板json文件
     ofn = "./file1"
     infile = open(ifn, 'r')
     outfile = open(ofn, 'w')
@@ -26,9 +26,8 @@ def RdWrt():
     infile.close()
     outfile.close()
 
-## [Create&Write file2]生成中转文件File2并把file1的内容写入。这个函数会在循环中被反复使用
 def CrtWrt2():
-    shutil.copyfile("./file1","./file2")
+    shutil.copyfile("./file1","./file2")               ##直接复制一个和file1一样的源文件。用来后面做循环。
 
 ## [Delete file 2]用来删除file2从而进行下一个循环
 def DelF2():
@@ -39,7 +38,7 @@ def SwhFuckingNum(i):
     with open('./file2','r+') as d1:
         infos=d1.readlines()
         d1.seek(0,0)
-        d1.truncate()
+        d1.truncate()                   ## 灵魂语句，彻底终结尾部奇怪字符的问题。文件内容进入缓存，清空文件重写，问题解决。
         for line in infos:
             yaxe = (i-1)*6
             line=line.replace('thefuckingport',str(i))
@@ -71,4 +70,4 @@ def MainF():
         DelF2()
         i = i+1
 
-MainF()
+MainF()         ##主函数运行进行JSON生成。
