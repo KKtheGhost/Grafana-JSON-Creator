@@ -9,4 +9,5 @@ import commands
 import os
 
 def keyword_replace():
+    read_file()
     

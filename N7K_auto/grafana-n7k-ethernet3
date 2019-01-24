@@ -6,7 +6,7 @@
         "x": 0,
         "y": yaxevar
       },
-      "id": idvariable,
+      "id": idvariable0,
       "links": [],
       "mode": "markdown",
       "title": "Ethernet3/thefuckingport",
@@ -27,7 +27,7 @@
         "x": 2,
         "y": yaxevar
       },
-      "id": idvariable,
+      "id": idvariable1,
       "legend": {
         "avg": false,
         "current": false,
@@ -135,7 +135,7 @@
         "x": 8,
         "y": yaxevar
       },
-      "id": idvariable,
+      "id": idvariable2,
       "legend": {
         "avg": false,
         "current": false,
@@ -243,7 +243,7 @@
         "x": 12,
         "y": yaxevar
       },
-      "id": idvariable,
+      "id": idvariable3,
       "legend": {
         "avg": false,
         "current": false,
@@ -351,7 +351,7 @@
         "x": 18,
         "y": yaxevar
       },
-      "id": idvariable,
+      "id": idvariable4,
       "legend": {
         "avg": false,
         "current": false,

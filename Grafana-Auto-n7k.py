@@ -7,6 +7,7 @@
 
 import os
 import math
+import shutil
 
 ## [Delet&Create files]每次使用前清理上一次使用残留的file1和file3文件。
 def DelCrtFile():
@@ -17,7 +18,7 @@ def DelCrtFile():
 
 #[Read&Write]读取预设文档并把内容写入file1
 def RdWrt():
-    ifn = "./N7K_auto/grafana-n7k-ethernet3"
+    ifn = "./beijing-n7k-ethernet"
     ofn = "./file1"
     infile = open(ifn, 'r')
     outfile = open(ofn, 'w')
@@ -27,14 +28,7 @@ def RdWrt():
 
 ## [Create&Write file2]生成中转文件File2并把file1的内容写入。这个函数会在循环中被反复使用
 def CrtWrt2():
-    os.mknod('./file2')
-    ifn = r"./file1"
-    ofn = r"./file2"
-    infile = open(ifn, 'r')
-    outfile = open(ofn, 'w')
-    outfile.write(infile.read())
-    infile.close()
-    outfile.close()
+    shutil.copyfile("./file1","./file2")
 
 ## [Delete file 2]用来删除file2从而进行下一个循环
 def DelF2():
@@ -45,15 +39,13 @@ def SwhFuckingNum(i):
     with open('./file2','r+') as d1:
         infos=d1.readlines()
         d1.seek(0,0)
+        d1.truncate()
         for line in infos:
-            yaxe = (i-1)*5
+            yaxe = (i-1)*6
             line=line.replace('thefuckingport',str(i))
             line=line.replace('yaxevar',str(yaxe))
             line=line.replace('idvariable0',str(yaxe+2))
             line=line.replace('idvariable1',str(yaxe+3))
-            line=line.replace('idvariable2',str(yaxe+4))
-            line=line.replace('idvariable3',str(yaxe+5))
-            line=line.replace('idvariable4',str(yaxe+6))
             d1.write(line)
         d1.close()
 
@@ -68,13 +60,6 @@ def ToJSON():
     infile.close()
     outfile.close()
 
-## 因能力所限，在每个循环的尾部出现了迷之额外括号，所以设置字符删减函数。并且在原模函数的尾部添加7-8换行符
-def EditTail():
-    f = open("./file2","rb+")
-    f.seek(-5,os.SEEK_END)
-    f.truncate()
-    f.close()
-
 def MainF():
     i = 1
     DelCrtFile()
@@ -82,7 +67,6 @@ def MainF():
     while i <= 48:
         CrtWrt2()
         SwhFuckingNum(i)
-        EditTail()
         ToJSON()
         DelF2()
         i = i+1
