@@ -40,6 +40,7 @@ def SwhFuckingNum(i):
         d1.seek(0,0)
         d1.truncate()                   ## 灵魂语句，彻底终结尾部奇怪字符的问题。文件内容进入缓存，清空文件重写，问题解决。
         for line in infos:
+            ## 下面的部分就是用来替换相关的内容的，尤其是内容和循环数有关的时候。可以自由替换。
             yaxe = (i-1)*6
             line=line.replace('thefuckingport',str(i))
             line=line.replace('yaxevar',str(yaxe))
